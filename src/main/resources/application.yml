@@ -1,0 +1,16 @@
+server:
+    port: 8080
+    context-path: /rest
+
+spring:
+    main:
+        banner-mode: "off"
+    datasource:
+        platform: h2
+        driverClassName: org.h2.Driver
+        url: jdbc:h2:mem:test;MODE=PostgreSQL
+
+logging:
+    level:
+        org:
+            springframework: ERROR

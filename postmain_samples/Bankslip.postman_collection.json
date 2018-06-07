@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "072907b0-a58f-4e43-9217-b5477bff8156",
+		"name": "Bankslip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar boleto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"due_date\" : \"2018-02-30\" ,\r\n  \"total_in_cents\" : \"300000.12\" ,\r\n  \"customer\" : \"Itau S.A\" ,\r\n  \"status\" : \"PENDING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/bankslips",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"bankslips"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar boletos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"due_date\" : \"2018-01-01\" ,\r\n  \"total_in_cents\" : \"100000\" ,\r\n  \"customer\" : \"Trillian Company\" ,\r\n  \"status\" : \"PENDING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/bankslips",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"bankslips"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver detalhes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"due_date\" : \"2018-01-01\" ,\r\n  \"total_in_cents\" : \"100000\" ,\r\n  \"customer\" : \"Trillian Company\" ,\r\n  \"status\" : \"PENDING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/bankslips/76c902bf-21f8-4704-a4cb-cf9f7e270f42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"bankslips",
+						"76c902bf-21f8-4704-a4cb-cf9f7e270f42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pagar boleto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\" : \"PAID\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/bankslips/ff4f7e09-3744-4f7b-aef9-a3d8feb6cfcb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"bankslips",
+						"ff4f7e09-3744-4f7b-aef9-a3d8feb6cfcb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
