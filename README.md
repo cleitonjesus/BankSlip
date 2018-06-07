@@ -16,7 +16,7 @@ Observação:
 Ao rodar o projeto subirá o servidor na porta 8080 e banco de dados H2 em memória que irá criar a tabela de boleto automaticamente.
 É possível utilizar o [postman](https://www.getpostman.com/apps) para fazer os testes. 
 
-##Exemplos de chamada
+## Exemplos de chamada
 
 ### Criar boleto
 URL
@@ -32,7 +32,7 @@ Body
   "status" : "PENDING"
 }
 ```
-###Listar boletos
+### Listar boletos
 URL
 ```url
 GET http://localhost:8080/rest/bankslips
@@ -48,7 +48,7 @@ Retorno
   }
 ]
 ```
-###Ver detalhes do boleto
+### Ver detalhes do boleto
 URL
 ```url
 GET http://localhost:8080/rest/bankslips/{id}
@@ -64,7 +64,7 @@ Retorno
     "fine": 294000.12
 }
 ```
-###Pagar boleto
+### Pagar boleto
 URL
 ```url
 PUT http://localhost:8080/rest/bankslips/{id}
@@ -75,7 +75,7 @@ Body
   "status" : "PAID"
 }
 ```
-###Cancelar boleto
+### Cancelar boleto
 URL
 ```url
 PUT http://localhost:8080/rest/bankslips/{id}
