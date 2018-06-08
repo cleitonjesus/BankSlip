@@ -3,7 +3,7 @@ package br.com.cleiton.rest.bankslip.entity;
 import javax.validation.constraints.NotNull;
 
 /**
- * Classe entidade com as informações do boleto.
+ * Entidade usada somente para editar o status do boleto
  *
  * @author Cleiton de Jesus Hartje
  */

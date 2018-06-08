@@ -12,10 +12,14 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
+/**
+ * Implementação das regra de negócio da aplicação
+ *
+ * @author Cleiton de Jesus Hartje
+ */
 @Component
 @Transactional(readOnly = true)
 public class BankSlipBusinessImpl implements BankSlipBusiness {
-
 
   final BankSlipRepository bankSlipRepository;
 

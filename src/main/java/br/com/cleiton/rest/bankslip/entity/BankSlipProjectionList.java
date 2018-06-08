@@ -6,6 +6,11 @@ import org.springframework.data.rest.core.config.Projection;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+/**
+ * Projeção com as informações principais para mostrar em uma lista
+ *
+ * @author Cleiton de Jesus Hartje
+ */
 @Projection(name = "bankSlipProjectionList", types = { BankSlipEntity.class })
 public interface BankSlipProjectionList {
 

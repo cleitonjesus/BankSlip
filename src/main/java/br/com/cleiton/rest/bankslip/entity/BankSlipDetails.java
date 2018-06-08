@@ -3,7 +3,11 @@ package br.com.cleiton.rest.bankslip.entity;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
+/**
+ * Entidade para mostrar os detalhes do boleto. Tento também a multa se houver.
+ *
+ * @author Cleiton de Jesus Hartje
+ */
 public class BankSlipDetails extends BankSlipEntity {
   private BigDecimal fine;
 

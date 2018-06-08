@@ -2,7 +2,7 @@ package br.com.cleiton.rest.bankslip.controller;
 
 import br.com.cleiton.rest.bankslip.business.BankSlipBusiness;
 import br.com.cleiton.rest.bankslip.entity.*;
-import br.com.cleiton.rest.bankslip.exception.InvalidParameterException;
+import br.com.cleiton.rest.bankslip.exception.UnprocessableEntityException;
 import br.com.cleiton.rest.bankslip.exception.NotFoundException;
 import br.com.cleiton.rest.bankslip.repository.BankSlipRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +39,7 @@ public class BankSlipRestController {
           bankSlipEntity.getCustomer(), bankSlipEntity.getStatus()));
     }
     catch (Exception E) {
-      throw new InvalidParameterException(E);
+      throw new UnprocessableEntityException(E);
     }
     URI location = ServletUriComponentsBuilder
         .fromCurrentRequest().path("/{id}")

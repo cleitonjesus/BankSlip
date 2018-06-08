@@ -1,3 +1,4 @@
+# Arquivo de configuração do rest e banco de dados
 server:
     port: 8080
     context-path: /rest

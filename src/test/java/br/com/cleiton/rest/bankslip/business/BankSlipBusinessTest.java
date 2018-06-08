@@ -16,7 +16,11 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertTrue;
 
-
+/**
+ * Classe de teste da classe de negócio
+ *
+ * @author Cleiton de Jesus Hartje
+ */
 public class BankSlipBusinessTest {
 
   BankSlipBusiness bankSlipBusiness;

@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 /**
- * Classe entidade com as informações do boleto.
+ * Classe entidade com as informações do boleto para sua criação.
  *
  * @author Cleiton de Jesus Hartje
  */

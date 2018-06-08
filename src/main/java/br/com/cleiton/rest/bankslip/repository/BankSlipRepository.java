@@ -7,6 +7,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 
+/**
+ * Interface do repositório para as operações na tabela
+ *
+ * @author Cleiton de Jesus Hartje
+ */
 @Component
 public interface BankSlipRepository extends CrudRepository<BankSlipEntity, String> {
 

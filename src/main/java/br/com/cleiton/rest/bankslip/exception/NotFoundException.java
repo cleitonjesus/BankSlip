@@ -3,6 +3,11 @@ package br.com.cleiton.rest.bankslip.exception;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+/**
+ * Exception usada para retornar no rest 404.
+ *
+ * @author Cleiton de Jesus Hartje
+ */
 @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "Not found")
 public class NotFoundException extends RuntimeException {
   public NotFoundException() {
